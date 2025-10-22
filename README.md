@@ -17,6 +17,8 @@ web-automation-selenium/
 │
 ├── README.md
 ├── requirements.txt
+├── conftest.py
+├── pytest.ini
 ├── tests/
 │   ├── test_login.py
 │   ├── test_checkout.py
