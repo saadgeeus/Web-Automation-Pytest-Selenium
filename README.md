@@ -48,3 +48,31 @@ python -m venv .venv
 source .venv/bin/activate # Linux / macOS
 .venv\Scripts\activate # Windows
 ```
+2. Install requirements:
+```bash
+pip install -r requirements.txt
+```
+3. Run tests:
+```bash
+# run all tests and generate html report
+pytest -q --html=reports/test_report.html
+
+
+# run a specific test
+pytest tests/test_login.py -q
+```
+4. Open ```reports/test_report.html``` to view results.
+---
+## Test credentials (SauceDemo)
+- username: ```standard_user```
+- password: ```secret_sauce```
+
+## Notes
+- Chrome is required on the machine. ```webdriver-manager``` will download the appropriate chromedriver.
+- Adjust timeouts and waits in ```utils/driver_setup.py``` if needed.
+
+---
+## How To Use:
+1. Clone This Repo From This Link: [Web Automation Pytest Selenium](https://github.com/saadgeeus/Web-Automation-Pytest-Selenium)
+2. Create and activate a virtual environment and install requirements.txt.
+3. Run ```pytest -q --html=reports/test_report.html``` or ```python run_tests.py```.
